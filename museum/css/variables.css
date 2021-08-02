@@ -1,0 +1,14 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --gold-color: #9d8665;
+  --bg-dark: #030303;
+  --bg-dark-red: #710707;
+  --primary-font-family: 'Forum', cursive;
+  --secondary-font-family: 'Roboto', sans-serif;
+  --font-size-main-title: 80px;
+  --font-size-card-title: 32px;
+  --font-size-main-text: 28px;
+  --font-size-text: 22px;
+  --font-size-card-desc: 18px;
+}
