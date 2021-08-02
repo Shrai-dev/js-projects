@@ -88,6 +88,7 @@ a {
 }
 
 .welcome__content {
+  margin-top: 190px;
   width: 598px;
   display: flex;
   flex-direction: column;
@@ -298,6 +299,164 @@ a {
   font-weight: 300;
   font-size: var(--font-size-text);
   line-height: 38px;
+  color: var(--black-color);
+}
+
+.tickets {
+  height: 893px;
+  background-color: var(--black-color);
+}
+
+.tickets__container {
+  flex-direction: column;
+}
+
+.tickets__title {
+  margin-top: 75px;
+  padding-bottom: 25px;
+  color: var(--white-color);
+  border-bottom: 3px solid var(--bg-dark-red);
+}
+
+.tickets__content {
+  margin-top: 75px;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.tickets__content-image {
+  width: 720px;
+  height: 550px;
+  background-image: url('../assets/images/tickets-image.png');
+}
+
+.tickets__content-form {
+  margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tickets__content-ticket {
+  display: flex;
+  flex-direction: column;
+  margin-right: 240px;
+}
+
+.tickets__content-title,
+.tickets__order-title {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--font-size-main-text);
+  line-height: 33px;
+  color: var(--white-color);
+}
+
+.tickets__content-label {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--font-size-text);
+  line-height: 26px;
+  color: var(--white-color);
+}
+
+.tickets__content-label:nth-child(even) {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tickets__content-input {
+  margin-right: 23px;
+}
+
+.tickets__order {
+  justify-content: flex-end;
+}
+
+.tickets__amount-buttons {
+  margin-top: 11px;
+  display: flex;
+  width: 150px;
+  height: 50px;
+  /* border: 3px solid var(--white-color); */
+}
+
+.tickets__amount-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-top: 3px solid var(--white-color);
+  border-left: 3px solid var(--white-color);
+  border-bottom: 3px solid var(--white-color);
+  background-color: var(--black-color);
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-size-card-title);
+  line-height: 37px;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.tickets__amount-button:last-child {
+  border: none;
+  border-top: 3px solid var(--white-color);
+  border-bottom: 3px solid var(--white-color);
+  border-right: 3px solid var(--white-color);
+}
+
+.tickets__amount-input {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-top: 3px solid var(--white-color);
+  border-bottom: 3px solid var(--white-color);
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-size-card-title);
+  line-height: 37px;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.tickets__amount-buttons_title {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 200;
+  font-size: var(--font-size-text);
+  line-height: 26px;
+  color: var(--white-color);
+}
+
+.tickets__amount-buttons_title:nth-child(even) {
+  margin-top: 35px;
+}
+
+.tickets__price-title {
+  margin-top: 50px;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--font-size-main-text);
+  line-height: 33px;
+  color: var(--white-color);
+}
+
+.tickets__order-button {
+  margin-top: 50px;
+  width: 175px;
+  height: 50px;
+  background-color: var(--white-color);
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--font-size-text);
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 2px;
   color: var(--black-color);
 }
 

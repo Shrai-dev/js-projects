@@ -192,7 +192,64 @@
 						</p>
 					</div>
 				</div>
+			</div>
+		</section>
 
+		<section class="tickets" id="tickets">
+			<div class="container tickets__container">
+				<h2 class="tickets__title title">
+					Buy tickets
+				</h2>
+				<div class="tickets__content">
+					<div class="tickets__content-image"></div>
+					<div class="tickets__content-form">
+						<div class="tickets__content-ticket">
+							<h3 class="tickets__content-title">
+								Ticket Type
+							</h3>
+							<label class="tickets__content-label" for="">
+								<input class="tickets__content-input" type="radio" name="" id="">Permanent exhibition
+							</label>
+							<label class="tickets__content-label" for="">
+								<input class="tickets__content-input" type="radio" name="" id="">Temporary exhibition
+							</label>
+							<label class="tickets__content-label" for="">
+								<input class="tickets__content-input" type="radio" name="" id="">Combined Admission
+							</label>
+						</div>
+						<div class="tickets__order">
+							<h3 class="tickets__order-title">
+								Amount
+							</h3>
+							<p class="tickets__amount-buttons_title">
+								Basic 18+
+							</p>
+							<div class="tickets__amount-buttons">
+
+								<button class="tickets__amount-button" type="button"
+									onclick="this.nextElementSibling.stepDown()">-</button>
+								<input type="number" min="0" max="20" value="1" readonly class="tickets__amount-input">
+								<button class="tickets__amount-button" type="button"
+									onclick="this.previousElementSibling.stepUp()">+</button>
+							</div>
+							<p class="tickets__amount-buttons_title">
+								Senior 65+
+							</p>
+							<div class="tickets__amount-buttons">
+
+								<button class="tickets__amount-button" type="button"
+									onclick="this.nextElementSibling.stepDown()">-</button>
+								<input type="number" min="0" max="20" value="1" readonly class="tickets__amount-input">
+								<button class="tickets__amount-button" type="button"
+									onclick="this.previousElementSibling.stepUp()">+</button>
+							</div>
+							<h3 class="tickets__price-title">
+								Total € 200
+							</h3>
+							<button class="tickets__order-button" type="submit">Buy now</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
