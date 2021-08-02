@@ -4,9 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   scroll-behavior: smooth;
 }
 
@@ -271,6 +268,37 @@ a {
   width: 720px;
   height: 700px;
   background-image: url(../assets/images/explore-picture.png);
+}
+
+.video {
+  height: 1010px;
+}
+
+.video__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.video__content {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video__content-title {
+  color: var(--gold-color);
+}
+
+.video__content-text {
+  width: 720px;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--font-size-text);
+  line-height: 38px;
+  color: var(--black-color);
 }
 
 .contacts {
