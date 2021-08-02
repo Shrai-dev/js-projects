@@ -227,3 +227,48 @@ a {
   font-size: var(--font-size-card-desc);
   line-height: 21px;
 }
+
+.explore {
+  height: 865px;
+  background-color: var(--bg-dark);
+}
+
+.explore__wrapper {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.explore__content {
+  width: 46%;
+}
+
+.explore__content-title {
+  padding-bottom: 25px;
+  color: var(--white-color);
+  border-bottom: 2px solid var(--bg-dark-red);
+}
+
+.explore__content-text {
+  margin-top: 25px;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--font-size-text);
+  line-height: 38px;
+  color: var(--white-color);
+}
+
+.explore__content-text:first-of-type {
+  margin-top: 75px;
+}
+
+.explore__content-text--emphasized {
+  color: var(--gold-color);
+}
+
+.explore__image {
+  width: 720px;
+  height: 700px;
+  background-image: url(../assets/images/explore-picture.png);
+}
