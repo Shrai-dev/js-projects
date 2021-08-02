@@ -74,7 +74,7 @@ a {
   font-family: var(--secondary-font-family);
   font-style: normal;
   font-weight: 300;
-  font-size: var(--font-size-description);
+  font-size: var(--font-size-text);
   line-height: 50px;
   letter-spacing: 2px;
   color: var(--white-color);
@@ -333,4 +333,49 @@ a {
   width: 960px;
   height: 620px;
   background-image: url('../assets/images/contacts-map.png');
+}
+
+.footer {
+  height: 300px;
+  background-color: var(--bg-dark);
+}
+
+.footer__wrapper {
+  width: 100%;
+  margin-top: 75px;
+  display: flex;
+}
+
+.footer__logo {
+  margin-top: 0;
+  align-items: flex-start;
+}
+
+.footer__navigation {
+  margin-right: 398px;
+  margin-left: 145px;
+}
+
+.footer__navigation-list {
+  width: 360px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 336px;
+  margin-top: 88px;
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid #666666;
+  border-radius: 50%;
 }
