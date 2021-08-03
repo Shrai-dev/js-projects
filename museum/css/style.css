@@ -330,6 +330,7 @@ a {
 
 .tickets__content {
   margin-top: 75px;
+  margin-left: 20px;
   display: flex;
   /* justify-content: space-between; */
 }
@@ -428,7 +429,7 @@ a {
   font-family: var(--secondary-font-family);
   font-style: normal;
   font-weight: normal;
-  font-size: var(--font-size-card-title);
+  font-size: var(--font-size-text);
   line-height: 37px;
   text-align: center;
   color: var(--white-color);
