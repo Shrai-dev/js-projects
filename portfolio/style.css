@@ -3,7 +3,7 @@
   --secondary-font-family: 'Inter', sans-serif;
   --bg-color: #000000;
   --main-color: #ffffff;
-  --action-color: #bdae82;
+  --gold-color: #bdae82;
   --bold-font-weight: 700;
   --normal-font-weight: 400;
 }
@@ -25,6 +25,7 @@ a {
 
 body {
   width: 1440px;
+  margin: 0 auto;
   background-color: var(--bg-color);
 }
 
@@ -57,7 +58,7 @@ body {
 }
 
 .header__logo-icon:hover path {
-  fill: var(--action-color);
+  fill: var(--gold-color);
 }
 
 .header__nav-list {
@@ -91,7 +92,7 @@ body {
 }
 
 .header__nav-link:hover {
-  color: var(--action-color);
+  color: var(--gold-color);
 }
 
 .header__lang {
@@ -109,7 +110,7 @@ body {
 }
 
 .active {
-  color: var(--action-color);
+  color: var(--gold-color);
 }
 
 .header__slash {
@@ -154,9 +155,81 @@ body {
   line-height: 40px;
   text-align: center;
   color: var(--bg-color);
-  background-color: var(--action-color);
+  background-color: var(--gold-color);
 }
 
 .hero__content-btn:hover {
+  color: var(--main-color);
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 482px;
+}
+/* .skills::after, */
+.skills::before {
+  content: '';
+  width: 700px;
+  top: 139px;
+  position: relative;
+  z-index: 0;
+  border-bottom: 1px solid var(--gold-color);
+}
+
+.title {
+  width: 152px;
+  padding-top: 100px;
+  text-align: center;
+  position: relative;
+  z-index: 20;
+  font-family: var(--primary-font-family);
+  font-weight: var(--bold-font-weight);
+  font-size: 40px;
+  line-height: 80px;
+  background-color: var(--bg-color);
+  color: var(--gold-color);
+}
+
+.skills__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.skills__item {
+  width: 320px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skills__item-icon {
+  width: 62px;
+  height: 50px;
+}
+
+.skills__item-title {
+  margin-top: 50px;
+  font-family: var(--secondary-font-family);
+  font-weight: var(--bold-font-weight);
+  font-size: 20px;
+  line-height: 40px;
+  color: var(--main-color);
+}
+
+.skills__item-text {
+  width: 280px;
+  margin-top: 20px;
+  font-family: var(--secondary-font-family);
+  font-weight: var(--normal-font-weight);
+  font-size: 18px;
+  line-height: 36px;
   color: var(--main-color);
 }
