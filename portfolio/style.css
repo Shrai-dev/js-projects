@@ -259,6 +259,10 @@ body {
   border-bottom: 2px solid var(--gold-color);
 }
 
+.portfolio__title {
+  width: 220px;
+}
+
 .portfolio__wrapper-btn {
   margin-top: 60px;
 }
@@ -293,4 +297,43 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video::before {
+  content: '';
+  width: 700px;
+  top: 139px;
+  position: relative;
+  z-index: 0;
+  border-bottom: 2px solid var(--gold-color);
+}
+
+.video__player {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__player-image {
+  width: 1400px;
+  height: 705px;
+  /* text-align: center; */
+  position: relative;
+}
+
+.video__player-btn {
+  width: 1400px;
+  height: 705px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
