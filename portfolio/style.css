@@ -52,7 +52,7 @@ body {
 }
 
 .header__logo {
-  margin: 20px auto 20px 20px;
+  margin: 20px 794px 20px 0;
 }
 
 .header__logo-icon {
@@ -72,7 +72,7 @@ body {
 }
 
 .header__nav-item:nth-child(1) {
-  margin-left: 30px;
+  margin-left: 22px;
 }
 
 .header__nav-item:nth-child(5) {
@@ -101,7 +101,7 @@ body {
 }
 
 .header__lang {
-  margin: 20px 20px 20px 0;
+  margin: 16px 0 20px 4px;
 }
 
 .header__lang-btn {
@@ -119,6 +119,12 @@ body {
 }
 
 .header__slash {
+  margin-right: 4px;
+  margin-left: 7px;
+  font-family: var(--secondary-font-family);
+  font-weight: var(--bold-font-weight);
+  font-size: 20px;
+  line-height: 50px;
   color: var(--main-color);
 }
 
@@ -180,7 +186,7 @@ body {
 .skills::before {
   content: '';
   width: 700px;
-  top: 139px;
+  top: 135px;
   position: relative;
   z-index: 0;
   border-bottom: 2px solid var(--gold-color);
@@ -200,11 +206,15 @@ body {
   color: var(--gold-color);
 }
 
+.skills__title {
+  padding-top: 94px;
+}
+
 .skills__items {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 56px;
 }
 
 .skills__item {
@@ -220,7 +230,7 @@ body {
 .skills__item:nth-child(2),
 .skills__item:nth-child(3),
 .skills__item:nth-child(4) {
-  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .skills__item-icon {
@@ -269,13 +279,13 @@ body {
 }
 
 .portfolio__wrapper-btn {
-  margin-top: 60px;
+  margin-top: 58px;
 }
 
 .portfolio__btn {
   width: 220px;
   height: 55px;
-  padding-top: 8px;
+  /* padding-top: 8px; */
   background-color: transparent;
   color: var(--gold-color);
   border: 2px solid var(--gold-color);
@@ -321,7 +331,7 @@ body {
 }
 
 .video__player {
-  margin-top: 60px;
+  margin-top: 58px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -366,7 +376,7 @@ body {
 
 .price__items {
   display: flex;
-  margin-top: 60px;
+  margin-top: 58px;
 }
 
 .price__item {
@@ -420,7 +430,7 @@ body {
   height: 55px;
   margin-top: 40px;
   margin-bottom: 43px;
-  padding: 6px 39px 7px;
+  padding: 6px 37px 7px;
   background-color: var(--gold-color);
   color: var(--bg-color);
   border: 2px solid var(--gold-color);
@@ -521,7 +531,7 @@ body {
   height: 55px;
   margin-top: 30px;
   /* margin-bottom: 43px; */
-  padding: 6px 39px 7px;
+  padding: 6px 37px 7px;
   background-color: var(--gold-color);
   color: var(--bg-color);
   border: 2px solid var(--gold-color);
@@ -552,6 +562,7 @@ body {
 
 .footer__copyright {
   display: flex;
+  /* margin-top: -4px; */
   font-family: var(--secondary-font-family);
   font-weight: var(--normal-font-weight);
   font-size: 20px;
@@ -570,6 +581,11 @@ body {
 
 .footer__year {
   margin-right: 20px;
+  margin-left: 20px;
+}
+
+.footer__course {
+  /* margin-top: -4px; */
   margin-left: 20px;
 }
 
