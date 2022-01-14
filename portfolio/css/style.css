@@ -28,7 +28,7 @@ body {
 }
 
 .main {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -62,6 +62,10 @@ body {
 
 .header__logo-icon:hover path {
   fill: var(--gold-color);
+}
+
+.burger__menu {
+  display: none;
 }
 
 .header__nav-list {
