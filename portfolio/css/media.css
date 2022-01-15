@@ -129,4 +129,19 @@
     font-size: 18px;
     line-height: 22px;
   }
+  .portfolio::before {
+    content: '';
+    width: 364px;
+    top: 102px;
+  }
+  .portfolio__title {
+    width: 185px;
+  }
+  .portfolio__wrapper-btn {
+    margin-top: 50px;
+    width: 445px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 }
