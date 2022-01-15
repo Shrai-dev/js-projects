@@ -331,20 +331,19 @@ body {
 
 .video__player {
   margin-top: 58px;
+  width: 100vw;
+  height: 705px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.video__player-image {
-  width: 100vw;
-  height: 418px;
-  position: relative;
+  background-image: url('../assets/images/video-player.jpg');
+  background-size: cover;
+  background-position: -15px center;
 }
 
 .video__player-btn {
   width: 100vw;
-  height: 418px;
+  height: 705px;
   position: absolute;
   background-color: transparent;
   border: none;

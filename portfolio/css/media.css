@@ -149,6 +149,17 @@
     width: 364px;
     top: 102px;
   }
+  .video__player {
+    margin-top: 50px;
+    width: 100vw;
+    height: 418px;
+    background-image: url('../assets/images/video-player.jpg');
+    background-size: cover;
+    background-position: -15px center;
+  }
+  .video__player-btn {
+    height: 418px;
+  }
   .video__player-icon {
     width: 75px;
     height: 75px;
