@@ -66,8 +66,8 @@
     transition-duration: 0.25s;
   }
   .hero {
-    height: 590px;
-    background-position: 25px -20px;
+    height: 616px;
+    background-position: -1px -27px;
   }
   .hero__content {
     margin-top: 78px;
@@ -204,5 +204,26 @@
   .contacts__form-message {
     background-color: var(--bg-color);
     opacity: 0.5;
+  }
+  .footer {
+    height: 190px;
+  }
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__copyright {
+    margin-top: -15px;
+  }
+
+  .footer__link,
+  .footer__course-link {
+    font-size: 20px;
+  }
+  .footer__course {
+    margin-left: 0;
+    margin-top: -10px;
+  }
+  .footer__social-list {
+    margin-top: 17px;
   }
 }
