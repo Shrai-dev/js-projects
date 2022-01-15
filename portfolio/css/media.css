@@ -164,4 +164,22 @@
     width: 75px;
     height: 75px;
   }
+  .price {
+    height: 1905px;
+  }
+  .price::before {
+    content: '';
+    width: 364px;
+    top: 102px;
+  }
+  .price__items {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .price__item {
+    width: 420px;
+  }
+  .price__item:nth-child(2) {
+    margin: 50px 0;
+  }
 }
