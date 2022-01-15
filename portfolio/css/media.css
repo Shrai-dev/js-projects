@@ -88,4 +88,45 @@
   .hero__content-btn {
     margin-top: 60px;
   }
+  .skills {
+    height: 729px;
+  }
+  .skills::before {
+    content: '';
+    width: 364px;
+    top: 102px;
+  }
+  .title {
+    width: 152px;
+    padding-top: 80px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .skills__items {
+    flex-wrap: wrap;
+    margin-top: 36px;
+  }
+  .skills__item {
+    width: 300px;
+    height: 224px;
+  }
+  .skills__item:nth-child(2),
+  .skills__item:nth-child(4) {
+    margin-left: 44px;
+  }
+  .skills__item:nth-child(3) {
+    margin-left: 0;
+  }
+  .skills__item:nth-child(3),
+  .skills__item:nth-child(4) {
+    margin-top: 36px;
+  }
+  .skills__item-title {
+    margin-top: 30px;
+  }
+  .skills__item-text {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
