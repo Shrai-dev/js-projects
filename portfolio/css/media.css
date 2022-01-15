@@ -144,4 +144,13 @@
     flex-wrap: wrap;
     gap: 5px;
   }
+  .video::before {
+    content: '';
+    width: 364px;
+    top: 102px;
+  }
+  .video__player-icon {
+    width: 75px;
+    height: 75px;
+  }
 }

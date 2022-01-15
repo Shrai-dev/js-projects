@@ -337,18 +337,23 @@ body {
 }
 
 .video__player-image {
-  width: 1400px;
-  height: 705px;
+  width: 100vw;
+  height: 418px;
   position: relative;
 }
 
 .video__player-btn {
-  width: 1400px;
-  height: 705px;
+  width: 100vw;
+  height: 418px;
   position: absolute;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.video__player-icon {
+  width: 130px;
+  height: 130px;
 }
 
 .video__player-icon:hover path {
