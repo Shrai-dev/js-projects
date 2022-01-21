@@ -305,6 +305,7 @@ body {
 }
 
 .portfolio__items {
+  width: 98%;
   margin-top: 60px;
   display: flex;
   justify-content: center;
