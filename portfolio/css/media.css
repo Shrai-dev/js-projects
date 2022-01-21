@@ -26,6 +26,9 @@
   .skills__item:nth-child(4) {
     margin-left: 30px;
   }
+  .price__item {
+    width: 30vw;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -102,7 +105,8 @@
   .portfolio__title {
     width: 220px;
   }
-  .video::before {
+  .video::before,
+  .price::before {
     content: '';
     width: 464px;
     top: 102px;
@@ -142,6 +146,16 @@
   }
   .video__player-btn {
     height: 555px;
+  }
+  .price__items {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .price__item {
+    width: 400px;
+  }
+  .price__item:nth-child(2) {
+    margin: 50px 0;
   }
 }
 
@@ -298,16 +312,16 @@
     width: 364px;
     top: 102px;
   }
-  .price__items {
+  /* .price__items {
     flex-direction: column;
     margin-top: 50px;
-  }
+  } */
   .price__item {
     width: 420px;
   }
-  .price__item:nth-child(2) {
+  /* .price__item:nth-child(2) {
     margin: 50px 0;
-  }
+  } */
   .contacts {
     height: 600px;
     align-items: center;
@@ -412,6 +426,44 @@
   .video__player-btn {
     height: 345px;
   }
+  .price {
+    height: 1260px;
+  }
+  .price__items {
+    margin-top: 30px;
+  }
+  .price__item:nth-child(2) {
+    margin: 20px 0;
+  }
+  .price__item {
+    width: 60vw;
+    height: 440px;
+  }
+  .price__item-title {
+    margin-top: 28px;
+    font-size: 26px;
+    line-height: 52px;
+  }
+  .price__item-subtitle {
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: 44px;
+  }
+  .price__item-list {
+    margin-top: 15px;
+  }
+  .price__item-description {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .price__item-btn {
+    width: 200px;
+    margin-top: 25px;
+    margin-bottom: 28px;
+    padding: 6px 27px 7px;
+    font-size: 18px;
+    line-height: 34px;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -458,6 +510,9 @@
   .video {
     height: 554px;
   }
+  .price__item {
+    width: 70vw;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -480,7 +535,8 @@
     line-height: 24px;
   }
   .skills::before,
-  .video::before {
+  .video::before,
+  .price::before {
     content: '';
     width: 264px;
   }
@@ -491,6 +547,9 @@
   .video__player {
     height: 345px;
     background-position: -126px center;
+  }
+  .price__item {
+    width: 80vw;
   }
 }
 
