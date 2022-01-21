@@ -332,7 +332,8 @@ body {
 
 .video__player {
   margin-top: 58px;
-  width: 100%;
+  padding: 0 20px;
+  width: 98%;
   height: 705px;
   display: flex;
   flex-direction: column;
@@ -340,7 +341,7 @@ body {
   background-image: url('../assets/images/video-player.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -15px center;
+  background-position: center center;
 }
 
 .video__player-btn {

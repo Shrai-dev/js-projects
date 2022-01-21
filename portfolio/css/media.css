@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 1439px) {
   .main {
-    width: 98vw;
+    width: 99vw;
   }
   .hero {
     background-size: auto 880px;
@@ -102,6 +102,11 @@
   .portfolio__title {
     width: 220px;
   }
+  .video::before {
+    content: '';
+    width: 464px;
+    top: 102px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -130,8 +135,13 @@
     display: flex;
     width: 445px;
     flex-wrap: wrap;
-    /* justify-content: center; */
     gap: 5px;
+  }
+  .video__player {
+    height: 555px;
+  }
+  .video__player-btn {
+    height: 555px;
   }
 }
 
@@ -395,6 +405,13 @@
   .portfolio {
     height: 3890px;
   }
+  .video__player {
+    height: 345px;
+    background-position: center center;
+  }
+  .video__player-btn {
+    height: 345px;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -438,6 +455,9 @@
     width: 340px;
     height: 450px;
   }
+  .video {
+    height: 554px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -459,13 +479,18 @@
     font-size: 18px;
     line-height: 24px;
   }
-  .skills::before {
+  .skills::before,
+  .video::before {
     content: '';
     width: 264px;
   }
   .portfolio::before {
     content: '';
     width: 314px;
+  }
+  .video__player {
+    height: 345px;
+    background-position: -126px center;
   }
 }
 
