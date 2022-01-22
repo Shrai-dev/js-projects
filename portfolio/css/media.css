@@ -53,6 +53,9 @@
   .skills__item-text {
     width: 270px;
   }
+  .contacts {
+    height: 654px;
+  }
 }
 
 @media screen and (max-width: 1170px) {
@@ -111,6 +114,14 @@
     width: 464px;
     top: 102px;
   }
+  .contacts {
+    height: 530px;
+    background-size: cover;
+    background-position-x: center;
+  }
+  .contacts__title {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -146,6 +157,9 @@
   }
   .video__player-btn {
     height: 555px;
+  }
+  .price {
+    height: 1845px;
   }
   .price__items {
     flex-direction: column;
@@ -312,16 +326,9 @@
     width: 364px;
     top: 102px;
   }
-  /* .price__items {
-    flex-direction: column;
-    margin-top: 50px;
-  } */
   .price__item {
     width: 420px;
   }
-  /* .price__item:nth-child(2) {
-    margin: 50px 0;
-  } */
   .contacts {
     height: 600px;
     align-items: center;
@@ -427,7 +434,7 @@
     height: 345px;
   }
   .price {
-    height: 1260px;
+    height: 1584px;
   }
   .price__items {
     margin-top: 30px;
@@ -463,6 +470,11 @@
     padding: 6px 27px 7px;
     font-size: 18px;
     line-height: 34px;
+  }
+  .contacts {
+    height: 530px;
+    background-size: cover;
+    background-position-x: -235px;
   }
 }
 
@@ -513,6 +525,19 @@
   .price__item {
     width: 70vw;
   }
+  .contacts__title {
+    padding-top: 45px;
+    width: 350px;
+  }
+  .contacts__form {
+    width: 350px;
+  }
+  .contacts__form-input {
+    width: 350px;
+  }
+  .contacts__form-message {
+    width: 350px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -551,6 +576,11 @@
   .price__item {
     width: 80vw;
   }
+  .contacts {
+    height: 520px;
+    background-position: -195px -65px;
+    background-size: auto 600px;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -578,5 +608,17 @@
   .portfolio::before {
     content: '';
     width: 264px;
+  }
+  .contacts__title {
+    width: 310px;
+  }
+  .contacts__form {
+    width: 310px;
+  }
+  .contacts__form-input {
+    width: 310px;
+  }
+  .contacts__form-message {
+    width: 310px;
   }
 }
