@@ -163,7 +163,7 @@
   }
   .price__items {
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 68px;
   }
   .price__item {
     width: 400px;
@@ -198,13 +198,19 @@
     width: 100vw;
   }
   .header__logo {
-    margin: 20px calc(100vw - 44%) 20px 60px;
+    margin: 20px calc(100vw - 46%) 20px 48px;
   }
   .header__nav-list {
     display: none;
   }
+  .header__lang {
+    margin: 16px 0 20px 15px;
+  }
+  .header__lang-btn {
+    margin-left: 10px;
+  }
   .burger__menu {
-    margin: 11px 64px 11px 20px;
+    margin: 11px 54px 11px 26px;
     display: block;
     height: 28px;
     width: 50px;
@@ -251,18 +257,37 @@
     transition-duration: 0.25s;
   }
   .hero {
-    height: 703px;
+    height: 590px;
     background-position: -60px -27px;
+  }
+  .hero__content {
+    margin-top: 78px;
+    margin-left: 56px;
+  }
+  .hero__content-text {
+    margin-top: 19px;
+    line-height: 25px;
+  }
+  .hero__content-btn {
+    margin-top: 57px;
+  }
+  .title {
+    margin-top: 13px;
+    padding-top: 126px;
   }
   .skills {
     height: 629px;
   }
-  .skills::before {
+  .skills::before,
+  .portfolio::before,
+  .video::before,
+  .price::before {
     content: '';
     width: 364px;
+    top: 158px;
   }
   .skills__items {
-    margin-top: 36px;
+    margin-top: 44px;
   }
   .skills__item {
     width: 300px;
@@ -279,37 +304,28 @@
     margin-top: 30px;
   }
   .skills__item-text {
+    width: 279px;
     margin-top: 20px;
     font-size: 18px;
     line-height: 22px;
-  }
-  .portfolio::before {
-    content: '';
-    width: 364px;
-    top: 102px;
   }
   .portfolio__title {
     width: 185px;
   }
   .portfolio__wrapper-btn {
-    margin-top: 50px;
+    margin-top: 69px;
     width: 445px;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
   }
-  .video::before {
-    content: '';
-    width: 364px;
-    top: 102px;
-  }
   .video__player {
-    margin-top: 50px;
+    margin-top: 68px;
     width: 100vw;
     height: 418px;
     background-image: url('../assets/images/video-player.jpg');
     background-size: cover;
-    background-position: -15px center;
+    background-position: -10px center;
   }
   .video__player-btn {
     height: 418px;
@@ -321,11 +337,6 @@
   .price {
     height: 1905px;
   }
-  .price::before {
-    content: '';
-    width: 364px;
-    top: 102px;
-  }
   .price__item {
     width: 420px;
   }
@@ -336,6 +347,8 @@
     background-size: cover;
   }
   .contacts__title {
+    margin-top: 31px;
+    padding-top: 38px;
     width: 450px;
     text-align: center;
   }
@@ -345,8 +358,12 @@
     align-items: center;
   }
   .contacts__form-input {
+    margin-top: 54px;
     background-color: var(--bg-color);
     opacity: 0.5;
+  }
+  .tel-input {
+    margin-top: 20px;
   }
   .contacts__form-message {
     background-color: var(--bg-color);
@@ -395,6 +412,17 @@
   .skills {
     height: 890px;
   }
+  .skills::before,
+  .portfolio::before,
+  .video::before,
+  .price::before {
+    content: '';
+    top: 94px;
+  }
+  .title {
+    margin-top: 13px;
+    padding-top: 60px;
+  }
   .skills__items {
     flex-direction: column;
     flex-wrap: no-wrap;
@@ -412,6 +440,9 @@
   }
   .portfolio {
     height: 3951px;
+  }
+  .portfolio__wrapper-btn {
+    margin-top: 50px;
   }
 }
 
@@ -549,6 +580,12 @@
   .header__logo {
     margin: 20px 30% 20px 25px;
   }
+  .header__lang-btn {
+    margin-left: 5px;
+  }
+  .burger__menu {
+    margin: 11px 18px 11px 15px;
+  }
   .hero__content {
     margin-top: 50px;
     margin-left: 25px;
@@ -592,6 +629,7 @@
   .header__logo {
     margin: 20px 20% 20px 25px;
   }
+
   .portfolio {
     height: 2605px;
   }
