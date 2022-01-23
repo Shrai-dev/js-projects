@@ -256,6 +256,23 @@
     transform: rotate(45deg) translate(0px, 50%);
     transition-duration: 0.25s;
   }
+  .show {
+    width: 620px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    padding: 134px 0 463px 127px;
+  }
+  .show .header__nav-item {
+    margin: 0;
+  }
   .hero {
     height: 590px;
     background-position: -60px -27px;
