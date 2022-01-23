@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 1439px) {
   .main {
-    width: 99vw;
+    width: 100vw;
   }
   .hero {
     background-size: auto 880px;
@@ -214,7 +214,7 @@
     display: block;
     height: 28px;
     width: 50px;
-    z-index: 5;
+    z-index: 15;
     position: relative;
     cursor: pointer;
   }
@@ -272,16 +272,14 @@
     margin-top: 57px;
   }
   .title {
-    margin-top: 13px;
-    padding-top: 126px;
+    margin-top: 62px;
+    padding-top: 77px;
   }
   .skills {
     height: 629px;
   }
   .skills::before,
-  .portfolio::before,
-  .video::before,
-  .price::before {
+  .portfolio::before {
     content: '';
     width: 364px;
     top: 158px;
@@ -309,8 +307,13 @@
     font-size: 18px;
     line-height: 22px;
   }
+  .portfolio {
+    height: 4030px;
+  }
   .portfolio__title {
     width: 185px;
+    margin-top: 13px;
+    padding-top: 126px;
   }
   .portfolio__wrapper-btn {
     margin-top: 69px;
@@ -318,6 +321,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+  }
+  .video::before {
+    content: '';
+    width: 364px;
+    top: 58px;
+  }
+  .video__title {
+    margin-top: 13px;
+    padding-top: 26px;
   }
   .video__player {
     margin-top: 68px;
@@ -336,6 +348,15 @@
   }
   .price {
     height: 1905px;
+  }
+  .price::before {
+    content: '';
+    width: 364px;
+    top: 120px;
+  }
+  .price__title {
+    margin-top: 13px;
+    padding-top: 87px;
   }
   .price__item {
     width: 420px;
@@ -506,6 +527,12 @@
     height: 530px;
     background-size: cover;
     background-position-x: -235px;
+  }
+}
+
+@media screen and (max-width: 619px) {
+  .show {
+    width: 100vw;
   }
 }
 
