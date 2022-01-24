@@ -10,13 +10,13 @@
 
 @media screen and (max-width: 1439px) {
   .main {
-    width: 100vw;
+    width: 98vw;
   }
   .hero {
     background-size: auto 880px;
   }
   .header__logo {
-    margin-right: calc(100vw - 49%);
+    margin-right: calc(100vw - 50%);
   }
   .skills__items {
     width: 98%;
@@ -33,7 +33,7 @@
 
 @media screen and (max-width: 1300px) {
   .header__logo {
-    margin-right: calc(100vw - 52%);
+    margin-right: calc(100vw - 54%);
   }
   .header__nav-item:nth-child(5) {
     margin-right: 25px;
@@ -65,7 +65,7 @@
     background-position: -10px -27px;
   }
   .header__logo {
-    margin-right: calc(100vw - 59%);
+    margin-right: calc(100vw - 60%);
   }
   .header__nav-item:nth-child(5) {
     margin-right: 20px;
@@ -130,7 +130,7 @@
     background-position: -85px -27px;
   }
   .header__logo {
-    margin-right: calc(100vw - 70%);
+    margin-right: calc(100vw - 71%);
   }
   .hero__content {
     margin-top: 140px;
@@ -174,13 +174,16 @@
 }
 
 @media screen and (max-width: 830px) {
+  .main {
+    width: 98vw;
+  }
   .hero {
     height: 616px;
     background-size: auto 700px;
     background-position: -50px -27px;
   }
   .header__logo {
-    margin-right: calc(100vw - 77%);
+    margin-right: calc(100vw - 79%);
   }
   .hero__content-title {
     font-weight: var(--normal-font-weight);
@@ -195,10 +198,10 @@
 
 @media screen and (max-width: 768px) {
   .header__container {
-    width: 100vw;
+    width: 98vw;
   }
   .header__logo {
-    margin: 20px calc(100vw - 46%) 20px 48px;
+    margin: 20px calc(100vw - 48%) 20px 48px;
   }
   .header__nav-list {
     display: none;
@@ -485,6 +488,9 @@
 }
 
 @media screen and (max-width: 670px) {
+  .header__logo {
+    margin-right: calc(100vw - 61%);
+  }
   .skills {
     height: 951px;
   }
@@ -622,7 +628,7 @@
     background-size: auto 600px;
   }
   .header__logo {
-    margin: 20px 30% 20px 25px;
+    margin: 20px 29% 20px 25px;
   }
   .header__lang-btn {
     margin-left: 5px;
@@ -671,9 +677,8 @@
     background-size: auto 600px;
   }
   .header__logo {
-    margin: 20px 20% 20px 25px;
+    margin: 20px 19% 20px 25px;
   }
-
   .portfolio {
     height: 2605px;
   }
