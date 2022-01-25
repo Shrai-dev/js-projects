@@ -1,3 +1,5 @@
+import translateInfo from './translate.js';
+
 const burgerIcon = document.querySelector('.burger__menu');
 const navigationMenu = document.querySelector('.header__nav-list');
 const navigationItems = document.querySelectorAll('.header__nav-link');
@@ -6,6 +8,12 @@ const portfolioBtns = document.querySelector('.portfolio__wrapper-btn');
 const portfolioBtn = document.querySelectorAll('.portfolio__btn');
 const portfolioImages = document.querySelectorAll('.portfolio__items-image');
 const seasons = ['winter', 'spring', 'summer', 'autumn'];
+
+const langEn = document.querySelector('.lang-en');
+const langRu = document.querySelector('.lang-ru');
+const translateData = document.querySelectorAll('[data-i18n]');
+
+let lang = 'en';
 
 if (burgerIcon) {
   burgerIcon.addEventListener('click', () => {
@@ -55,5 +63,32 @@ function preloadSummerImages() {
   });
 }
 preloadSummerImages();
+
+function changeLanguageEn() {
+  if (langRu.classList.contains('active')) {
+    langRu.classList.remove('active');
+    langEn.classList.add('active');
+    lang = 'en';
+  }
+  getTranslate();
+}
+
+function changeLanguageRu() {
+  if (langEn.classList.contains('active')) {
+    langEn.classList.remove('active');
+    langRu.classList.add('active');
+    lang = 'ru';
+  }
+  getTranslate();
+}
+
+function getTranslate() {
+  translateData.forEach(
+    (el) => (el.innerText = translateInfo[lang][el.dataset.i18n])
+  );
+}
+
+langEn.addEventListener('click', changeLanguageEn);
+langRu.addEventListener('click', changeLanguageRu);
 
 console.log(`Оценка - 75 баллов`);
