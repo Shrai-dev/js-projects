@@ -299,7 +299,7 @@ body {
   color: var(--main-color);
 }
 
-.btn-active {
+.portfolio__btn.btn-active {
   background-color: var(--gold-color);
   color: var(--bg-color);
 }
