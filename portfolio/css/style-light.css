@@ -1,8 +1,8 @@
 :root {
   --primary-font-family: 'Merriweather', serif;
   --secondary-font-family: 'Inter', sans-serif;
-  --bg-color: #000000;
-  --main-color: #ffffff;
+  --bg-color: #ffffff;
+  --main-color: #000000;
   --gold-color: #bdae82;
   --bold-font-weight: 700;
   --normal-font-weight: 400;
@@ -50,7 +50,7 @@ body {
 }
 
 .header__logo {
-  margin: 20px 794px 20px 0;
+  margin: 20px 730px 20px 0;
 }
 
 .header__logo-icon {
@@ -73,13 +73,13 @@ body {
   justify-content: center;
 }
 
-.header__nav-item:nth-child(1) {
+/* .header__nav-item:nth-child(1) {
   margin-left: 22px;
-}
+} */
 
-.header__nav-item:nth-child(5) {
+/* .header__nav-item:nth-child(5) {
   margin-right: 30px;
-}
+} */
 
 .header__nav-item:nth-child(even) {
   margin-right: 30px;
@@ -88,7 +88,7 @@ body {
 
 .header__nav-link {
   font-family: var(--secondary-font-family);
-  color: var(--main-color);
+  color: var(--bg-color);
   font-size: 20px;
   line-height: 50px;
   font-weight: var(--normal-font-weight);
@@ -103,13 +103,13 @@ body {
 }
 
 .header__lang {
-  margin: 16px 0 20px 4px;
+  margin: 16px 30px 20px;
 }
 
 .header__lang-btn {
   border: none;
   background: transparent;
-  color: var(--main-color);
+  color: var(--bg-color);
   font-family: var(--secondary-font-family);
   font-size: 20px;
   line-height: 50px;
@@ -127,7 +127,26 @@ body {
   font-weight: var(--bold-font-weight);
   font-size: 20px;
   line-height: 50px;
+  color: var(--bg-color);
+}
+
+.header__theme-btn {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background: transparent;
   color: var(--main-color);
+  cursor: pointer;
+}
+
+.header__theme-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.header__theme-icon:hover * {
+  stroke: var(--gold-color);
+  fill: var(--gold-color);
 }
 
 .hero__content {
@@ -144,7 +163,7 @@ body {
   font-weight: var(--bold-font-weight);
   font-size: 60px;
   line-height: 120px;
-  color: var(--main-color);
+  color: var(--bg-color);
 }
 
 .hero__content-text {
@@ -154,7 +173,7 @@ body {
   font-weight: var(--normal-font-weight);
   font-size: 20px;
   line-height: 40px;
-  color: var(--main-color);
+  color: var(--bg-color);
 }
 
 .hero__content-btn {
@@ -166,14 +185,14 @@ body {
   font-size: 20px;
   line-height: 40px;
   text-align: center;
-  color: var(--bg-color);
+  color: var(--main-color);
   background-color: var(--gold-color);
   border: 1px solid var(--gold-color);
   cursor: pointer;
 }
 
 .hero__content-btn:hover {
-  color: var(--main-color);
+  color: var(--bg-color);
 }
 
 .skills {
@@ -190,7 +209,7 @@ body {
   top: 135px;
   position: relative;
   z-index: 0;
-  border-bottom: 2px solid var(--gold-color);
+  border-bottom: 2px solid var(--main-color);
 }
 
 .title {
@@ -204,7 +223,7 @@ body {
   font-size: 40px;
   line-height: 80px;
   background-color: var(--bg-color);
-  color: var(--gold-color);
+  color: var(--main-color);
 }
 
 .skills__title {
@@ -271,7 +290,7 @@ body {
   top: 139px;
   position: relative;
   z-index: 0;
-  border-bottom: 2px solid var(--gold-color);
+  border-bottom: 2px solid var(--main-color);
 }
 
 .portfolio__title {
@@ -286,7 +305,7 @@ body {
   width: 220px;
   height: 55px;
   background-color: transparent;
-  color: var(--gold-color);
+  color: var(--main-color);
   border: 2px solid var(--gold-color);
   font-family: var(--secondary-font-family);
   font-weight: var(--normal-font-weight);
@@ -296,7 +315,8 @@ body {
 }
 
 .portfolio__btn:hover {
-  color: var(--main-color);
+  background-color: var(--gold-color);
+  color: var(--bg-color);
 }
 
 .portfolio__btn.btn-active {
@@ -327,7 +347,7 @@ body {
   top: 139px;
   position: relative;
   z-index: 0;
-  border-bottom: 2px solid var(--gold-color);
+  border-bottom: 2px solid var(--main-color);
 }
 
 .video__player {
@@ -375,7 +395,7 @@ body {
   top: 139px;
   position: relative;
   z-index: 0;
-  border-bottom: 2px solid var(--gold-color);
+  border-bottom: 2px solid var(--main-color);
 }
 
 .price__items {
@@ -436,7 +456,7 @@ body {
   margin-bottom: 43px;
   padding: 6px 37px 7px;
   background-color: var(--gold-color);
-  color: var(--bg-color);
+  color: var(--main-color);
   border: 2px solid var(--gold-color);
   font-family: var(--secondary-font-family);
   font-weight: var(--normal-font-weight);
@@ -446,7 +466,7 @@ body {
 }
 
 .price__item-btn:hover {
-  color: var(--main-color);
+  color: var(--bg-color);
 }
 
 .contacts {
@@ -536,7 +556,7 @@ body {
   margin-top: 30px;
   padding: 6px 37px 7px;
   background-color: var(--gold-color);
-  color: var(--bg-color);
+  color: var(--main-color);
   border: 2px solid var(--gold-color);
   font-family: var(--secondary-font-family);
   font-weight: var(--normal-font-weight);
@@ -546,13 +566,14 @@ body {
 }
 
 .contacts__form-btn:hover {
-  color: var(--main-color);
+  color: var(--bg-color);
 }
 
 .footer {
   height: 150px;
   display: flex;
   align-items: center;
+  background-color: var(--main-color);
 }
 
 .footer__container {
@@ -569,7 +590,7 @@ body {
   font-weight: var(--normal-font-weight);
   font-size: 20px;
   line-height: 50px;
-  color: var(--main-color);
+  color: var(--bg-color);
 }
 
 .footer__copy,
@@ -578,7 +599,7 @@ body {
   font-weight: var(--normal-font-weight);
   font-size: 20px;
   line-height: 50px;
-  color: var(--main-color);
+  color: var(--bg-color);
 }
 
 .footer__year {
@@ -596,7 +617,7 @@ body {
   font-weight: var(--normal-font-weight);
   font-size: 20px;
   line-height: 50px;
-  color: var(--main-color);
+  color: var(--bg-color);
 }
 
 .footer__social-list {

@@ -1,8 +1,8 @@
 :root {
   --primary-font-family: 'Merriweather', serif;
   --secondary-font-family: 'Inter', sans-serif;
-  --bg-color: #000000;
-  --main-color: #ffffff;
+  --bg-color: #ffffff;
+  --main-color: #000000;
   --gold-color: #bdae82;
   --bold-font-weight: 700;
   --normal-font-weight: 400;
@@ -10,13 +10,13 @@
 
 @media screen and (max-width: 1439px) {
   .main {
-    width: 98vw;
+    width: 99vw;
   }
   .hero {
     background-size: auto 880px;
   }
   .header__logo {
-    margin-right: calc(100vw - 50%);
+    margin-right: calc(100vw - 54%);
   }
   .skills__items {
     width: 98%;
@@ -33,7 +33,7 @@
 
 @media screen and (max-width: 1300px) {
   .header__logo {
-    margin-right: calc(100vw - 54%);
+    margin-right: calc(100vw - 60%);
   }
   .header__nav-item:nth-child(5) {
     margin-right: 25px;
@@ -65,7 +65,7 @@
     background-position: -10px -27px;
   }
   .header__logo {
-    margin-right: calc(100vw - 60%);
+    margin-right: calc(100vw - 68%);
   }
   .header__nav-item:nth-child(5) {
     margin-right: 20px;
@@ -206,6 +206,9 @@
   .header__nav-list {
     display: none;
   }
+  .header__nav-link {
+    color: var(--main-color);
+  }
   .header__lang {
     margin: 16px 0 20px 15px;
   }
@@ -229,7 +232,7 @@
     height: 10%;
     width: 100%;
     transition: all 0.3s ease 0s;
-    background-color: var(--main-color);
+    background-color: var(--bg-color);
   }
   .burger__menu::before,
   .burger__menu::after {
@@ -248,16 +251,19 @@
   .burger__menu.active span {
     transform: scale(0) translate(0px, -50%);
     transition-duration: 0.25s;
+    background-color: var(--main-color);
   }
   .burger__menu.active::before {
     top: 50%;
     transform: rotate(-45deg) translate(0px, -50%);
     transition-duration: 0.25s;
+    background-color: var(--main-color);
   }
   .burger__menu.active::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0px, 50%);
     transition-duration: 0.25s;
+    background-color: var(--main-color);
   }
   .show {
     width: 620px;
