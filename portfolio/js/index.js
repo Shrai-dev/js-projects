@@ -13,6 +13,8 @@ const langEn = document.querySelector('.lang-en');
 const langRu = document.querySelector('.lang-ru');
 const translateData = document.querySelectorAll('[data-i18n]');
 
+const toggler = document.querySelector('.header__theme-btn');
+
 let lang = 'en';
 
 if (burgerIcon) {
@@ -90,5 +92,17 @@ function getTranslate() {
 
 langEn.addEventListener('click', changeLanguageEn);
 langRu.addEventListener('click', changeLanguageRu);
+
+function changeTheme() {
+  const theme = document.getElementById('theme');
+
+  if (theme.getAttribute('href') === 'css/style-light.css') {
+    theme.href = 'css/style-dark.css';
+  } else {
+    theme.href = 'css/style-light.css';
+  }
+}
+
+toggler.addEventListener('click', changeTheme);
 
 console.log(`Оценка - 75 баллов`);

@@ -208,7 +208,7 @@ body {
 }
 
 .title {
-  width: 152px;
+  width: 200px;
   padding-top: 100px;
   text-align: center;
   position: relative;
@@ -289,7 +289,7 @@ body {
 }
 
 .portfolio__title {
-  width: 220px;
+  width: 280px;
 }
 
 .portfolio__wrapper-btn {
@@ -659,9 +659,9 @@ body {
   .header__logo {
     margin-right: calc(100vw - 60%);
   }
-  .header__nav-item:nth-child(5) {
+  /* .header__nav-item:nth-child(5) {
     margin-right: 25px;
-  }
+  } */
   .header__nav-item:nth-child(even) {
     margin-right: 25px;
     margin-left: 25px;
@@ -689,11 +689,11 @@ body {
     background-position: -10px -27px;
   }
   .header__logo {
-    margin-right: calc(100vw - 68%);
+    margin-right: calc(100vw - 66%);
   }
-  .header__nav-item:nth-child(5) {
+  /* .header__nav-item:nth-child(5) {
     margin-right: 20px;
-  }
+  } */
   .header__nav-item:nth-child(even) {
     margin-right: 20px;
     margin-left: 20px;
@@ -744,7 +744,7 @@ body {
     background-position-x: center;
   }
   .contacts__title {
-    width: 200px;
+    width: 344px;
   }
 }
 
@@ -754,7 +754,10 @@ body {
     background-position: -85px -27px;
   }
   .header__logo {
-    margin-right: calc(100vw - 71%);
+    margin-right: calc(100vw - 75%);
+  }
+  .header__lang {
+    margin: 16px 20px 20px;
   }
   .hero__content {
     margin-top: 140px;
@@ -799,7 +802,8 @@ body {
 
 @media screen and (max-width: 830px) {
   .main {
-    width: 98vw;
+    width: 100vw;
+    margin: 0;
   }
   .hero {
     height: 616px;
@@ -822,17 +826,17 @@ body {
 
 @media screen and (max-width: 768px) {
   .header__container {
-    width: 98vw;
+    width: 99vw;
   }
   .header__logo {
-    margin: 20px calc(100vw - 48%) 20px 48px;
+    margin: 20px calc(100vw - 56%) 20px 48px;
   }
   .header__nav-list {
     display: none;
   }
-  .header__lang {
+  /* .header__lang {
     margin: 16px 0 20px 15px;
-  }
+  } */
   .header__lang-btn {
     margin-left: 10px;
   }
@@ -955,7 +959,7 @@ body {
     height: 4030px;
   }
   .portfolio__title {
-    width: 185px;
+    width: 210px;
     margin-top: 13px;
     padding-top: 126px;
   }
@@ -1064,7 +1068,7 @@ body {
     background-size: auto 650px;
   }
   .header__logo {
-    margin-right: calc(100vw - 55%);
+    margin-right: calc(100vw - 63%);
   }
   .hero__content {
     margin-top: 68px;
@@ -1113,7 +1117,7 @@ body {
 
 @media screen and (max-width: 670px) {
   .header__logo {
-    margin-right: calc(100vw - 61%);
+    margin-right: calc(100vw - 67%);
   }
   .skills {
     height: 951px;
@@ -1178,6 +1182,9 @@ body {
 }
 
 @media screen and (max-width: 619px) {
+  .header__logo {
+    margin-right: calc(100vw - 71%);
+  }
   .show {
     width: 100vw;
   }
@@ -1189,7 +1196,7 @@ body {
     background-position: -200px -65px;
   }
   .header__logo {
-    margin: 20px calc(100vw - 67%) 20px 30px;
+    margin: 20px calc(100vw - 75%) 20px 30px;
   }
   .burger__menu {
     margin: 11px 28px 11px 20px;
@@ -1203,7 +1210,7 @@ body {
     background-size: auto 600px;
   }
   .header__logo {
-    margin: 20px calc(100vw - 77%) 20px 30px;
+    margin: 20px calc(100vw - 86%) 20px 30px;
   }
   .skills {
     height: 1052px;
@@ -1248,11 +1255,11 @@ body {
 @media screen and (max-width: 420px) {
   .hero {
     height: 520px;
-    background-position: -195px -65px;
+    background-position: -240px -65px;
     background-size: auto 600px;
   }
   .header__logo {
-    margin: 20px 29% 20px 25px;
+    margin: 20px 10% 20px 20px;
   }
   .header__lang-btn {
     margin-left: 5px;
@@ -1294,14 +1301,14 @@ body {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 361px) {
   .hero {
     height: 540px;
     background-position: -275px -60px;
     background-size: auto 600px;
   }
   .header__logo {
-    margin: 20px 19% 20px 25px;
+    margin: 20px 3% 20px 10px;
   }
   .portfolio {
     height: 2605px;
@@ -1327,6 +1334,7 @@ body {
     width: 310px;
   }
   .contacts__form-input {
+    margin-top: 25px;
     width: 310px;
   }
   .contacts__form-message {
