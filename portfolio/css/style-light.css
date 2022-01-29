@@ -50,7 +50,7 @@ body {
 }
 
 .header__logo {
-  margin: 20px 730px 20px 0;
+  margin: 20px 620px 20px 0;
 }
 
 .header__logo-icon {
@@ -72,14 +72,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
-/* .header__nav-item:nth-child(1) {
-  margin-left: 22px;
-} */
-
-/* .header__nav-item:nth-child(5) {
-  margin-right: 30px;
-} */
 
 .header__nav-item:nth-child(even) {
   margin-right: 30px;
@@ -641,13 +633,13 @@ body {
 
 @media screen and (max-width: 1439px) {
   .main {
-    width: 99vw;
+    width: 100%;
   }
   .hero {
     background-size: auto 880px;
   }
   .header__logo {
-    margin-right: calc(100vw - 54%);
+    margin-right: 42%;
   }
   .skills__items {
     width: 98%;
@@ -664,11 +656,8 @@ body {
 
 @media screen and (max-width: 1300px) {
   .header__logo {
-    margin-right: calc(100vw - 60%);
+    margin-right: 36%;
   }
-  /* .header__nav-item:nth-child(5) {
-    margin-right: 25px;
-  } */
   .header__nav-item:nth-child(even) {
     margin-right: 25px;
     margin-left: 25px;
@@ -696,11 +685,8 @@ body {
     background-position: -10px -27px;
   }
   .header__logo {
-    margin-right: calc(100vw - 66%);
+    margin-right: 30%;
   }
-  /* .header__nav-item:nth-child(5) {
-    margin-right: 20px;
-  } */
   .header__nav-item:nth-child(even) {
     margin-right: 20px;
     margin-left: 20px;
@@ -761,7 +747,7 @@ body {
     background-position: -85px -27px;
   }
   .header__logo {
-    margin-right: calc(100vw - 75%);
+    margin-right: 20%;
   }
   .header__lang {
     margin: 16px 20px 20px;
@@ -818,7 +804,7 @@ body {
     background-position: -50px -27px;
   }
   .header__logo {
-    margin-right: calc(100vw - 79%);
+    margin-right: 13%;
   }
   .hero__content-title {
     font-weight: var(--normal-font-weight);
@@ -844,9 +830,6 @@ body {
   .header__nav-link {
     color: var(--main-color);
   }
-  /* .header__lang {
-    margin: 16px 0 20px 15px;
-  } */
   .header__lang-btn {
     margin-left: 10px;
   }
