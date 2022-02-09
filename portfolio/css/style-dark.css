@@ -132,8 +132,13 @@ body {
 }
 
 .header__theme-icon {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
+}
+
+.header__theme-icon:hover * {
+  stroke: var(--gold-color);
+  fill: var(--gold-color);
 }
 
 .hero__content {
