@@ -52,6 +52,7 @@ body {
 
 .movie-container {
   width: 320px;
+  height: 604px;
   background-color: #166d70;
   border-radius: 10px;
 }
@@ -75,9 +76,34 @@ body {
 }
 
 .movie-rating {
+  padding: 8px;
   font-size: 24px;
   font-weight: 600;
   color: #d3ae6a;
+  background-color: #054346;
+  border-radius: 5px;
+}
+
+.movie-overview {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  opacity: 0;
+  max-height: 0;
+  width: 320px;
+  border-radius: 0 0 10px 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.movie-container:hover > .movie-overview {
+  max-height: 370px;
+  opacity: 1;
+  transform: translateY(-98%);
+  transition: opacity 0.5s ease-out;
 }
 
 .footer {
