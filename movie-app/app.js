@@ -42,3 +42,7 @@ async function doSearch() {
   mainContent.innerHTML = '';
   renderCards(searchData);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  searchBar.focus();
+});
