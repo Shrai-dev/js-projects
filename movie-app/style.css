@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #20989c;
+  font-family: 'Glory', sans-serif;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #166d70;
+}
+
+.header__search {
+  padding-left: 20px;
+  width: 400px;
+  height: 45px;
+  border: 1px solid #166d70;
+  border-radius: 50px;
+  font-family: 'Glory', sans-serif;
+  font-size: 20px;
+}
+
+.header__search::placeholder {
+  font-family: 'Glory', sans-serif;
+  font-size: 20px;
+}
+
+.header__search:focus,
+.header__search:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #166d70;
+  outline: none;
+  font-family: 'Glory', sans-serif;
+  font-size: 20px;
+}
+
+.main-content {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 65px;
+}
+
+.movie-container {
+  width: 320px;
+  height: 604px;
+  background-color: #166d70;
+  border-radius: 10px;
+}
+
+.movie-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.movie-info {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+
+.movie-title {
+  font-size: 24px;
+  color: #dddddd;
+}
+
+.movie-rating {
+  padding: 8px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #d3ae6a;
+  background-color: #054346;
+  border-radius: 5px;
+}
+
+.movie-overview {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  opacity: 0;
+  max-height: 0;
+  width: 320px;
+  border-radius: 0 0 10px 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.movie-container:hover > .movie-overview {
+  max-height: 370px;
+  opacity: 1;
+  transform: translateY(-98%);
+  transition: opacity 0.5s ease-out;
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #166d70;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-size: 24px;
+  color: #dddddd;
+}
+
+.footer__image {
+  width: 100px;
+}
