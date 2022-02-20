@@ -76,7 +76,6 @@ MAIN.appendChild(startScreen);
 
 const victoryScreen = document.createElement('div');
 victoryScreen.classList.add('overlay-text');
-victoryScreen.innerText = 'Victory';
 victoryScreen.setAttribute('id', 'victory-text');
 victoryScreen.setAttribute('data-action', 'newGame');
 MAIN.appendChild(victoryScreen);
@@ -85,6 +84,9 @@ const restart = document.createElement('span');
 restart.classList.add('overlay-text-small');
 restart.innerText = 'Click to Restart';
 victoryScreen.appendChild(restart);
+
+const movesBoard = document.querySelector('.movesBoard');
+const time = document.querySelector('.time');
 
 let backImg;
 let frontImg;
@@ -97,20 +99,35 @@ let lockBoard = false;
 let firstCard;
 let secondCard;
 
+let moves = 0;
+let seconds = 0;
+let minutes = 0;
+let seconds_str = '';
+let minutes_str = '';
+let timer;
+
 function startGame() {
+  seconds = 0;
+  minutes = 0;
+  seconds_str = '';
+  minutes_str = '';
+  time.innerHTML = '00:00';
+
+  clearInterval(timer);
   createCard(BOARD, CARD_ARRAY);
   sortCards();
 
   MAIN.addEventListener('click', ({ target }) => {
     if (target.dataset.action === 'newGame') {
       target.classList.remove('visible');
+      startWatching(seconds, minutes);
     }
   });
 }
 
 function createCard(wrapper, array) {
   array.forEach((card) => {
-    container = document.createElement('div');
+    const container = document.createElement('div');
     container.classList.add('board-card');
     container.setAttribute('data-name', card.name);
     wrapper.appendChild(container);
@@ -155,8 +172,12 @@ function checkForMatch() {
   if (firstCard.dataset.name === secondCard.dataset.name) {
     disableCards();
     cardsWon += 1;
+    moves++;
+    movesBoard.innerHTML = `${moves}`;
     setTimeout(checkWon, 1000);
   } else {
+    moves++;
+    movesBoard.innerHTML = `${moves}`;
     unflipCards();
   }
 }
@@ -180,7 +201,9 @@ function unflipCards() {
 
 function checkWon() {
   if (cardsWon === CARD_ARRAY.length / 2) {
+    victoryScreen.innerText = `You won in ${moves} moves`;
     victoryScreen.classList.add('visible');
+    victoryScreen.appendChild(restart);
 
     setTimeout(() => replay(), 1000);
   }
@@ -193,11 +216,22 @@ function resetBoard() {
 
 function replay() {
   BOARD.innerHTML = '';
+  movesBoard.innerHTML = 0;
   startGame();
   cardsWon = 0;
+  moves = 0;
   let boardCards = cards.forEach((card) =>
     card.addEventListener('click', flipCard)
   );
+}
+
+function startWatching(seconds, minutes) {
+  timer = setInterval(() => {
+    seconds > 58 ? ((minutes += 1), (seconds = 0)) : (seconds += 1);
+    seconds_str = seconds > 9 ? `${seconds}` : `0${seconds}`;
+    minutes_str = minutes > 9 ? `${minutes}` : `0${minutes}`;
+    time.innerHTML = `${minutes_str}:${seconds_str}`;
+  }, 1000);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
